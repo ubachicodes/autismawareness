@@ -265,6 +265,7 @@ header nav ul li a:hover{
     position: absolute;
     left: 0;
     top: 0;
+    filter: grayscale(100%);
     transition: 0.4s;
 }
 
@@ -273,14 +274,92 @@ header nav ul li a:hover{
     background-image: url(../images/ai-generated-8489716_640.webp);
 }
 
-.programs .boxcontainer .box:nth-child(1) .cardimage,
-.programs .boxcontainer .box:nth-child(1) .cardimage:after  {
+.programs .boxcontainer .box:nth-child(2) .cardimage,
+.programs .boxcontainer .box:nth-child(2) .cardimage:after  {
     background-image: url(../images/hiking-2540186_640.jpg);
 }
 
-.programs .boxcontainer .box:nth-child(1) .cardimage,
-.programs .boxcontainer .box:nth-child(1) .cardimage:after  {
+.programs .boxcontainer .box:nth-child(3) .cardimage,
+.programs .boxcontainer .box:nth-child(3) .cardimage:after  {
     background-image: url(../images/taking-notes-3475991_640.jpg);
 }
 
+.programs .boxcontainer .box:hover .cardimage:after {
+    top: 100%;
+}
+
+.programs .boxcontainer .box .programtitle {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+.programs .boxcontainer .box .donationcount {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;    
+    margin-top: 10px;   
+} 
+
+.programs .boxcontainer .box .donationcount span {
+    color: var(--themeRed);
+}
+
+.programs .boxcontainer .box button {
+    position: absolute;
+    left: 50%;
+    background-color: var(--themeRed);
+    color: #fff;
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 60px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+} 
+
 /* Programs section end*/
+
+/* Gallery Start Here*/
+
+.gallery .gallerycontainer {
+    column-gap: 4;
+    column-count: 20px;
+}
+
+.gallery .gallerycontainer .item {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gallery .gallerycontainer img {
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.gallery .gallerycontainer .title {
+    position: absolute;
+    background-color: var(--gray);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.gallery .gallerycontainer .item:hover .title {
+    opacity: 1;
+}
+
+.gallery .gallerycontainer .item:hover img {
+    transform: scale(1.2);
+}
+
+/* Gallery End Here*/
