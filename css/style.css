@@ -363,3 +363,96 @@ header nav ul li a:hover{
 }
 
 /* Gallery End Here*/
+
+/* Join Start Here*/
+.join{
+    background-image: url(../images/triangle-2724449_1280.webp);
+    color: #fff;
+}
+
+.join .jointitle {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.join .jointitle span {
+    font-weight: 800;
+}
+
+.join button {
+    padding: 7px 15px;
+    margin-top: 20px;
+    border: 0;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.join button.joinnow {
+    margin-right: 10px;
+    background-color: #424242;
+    color: #fff;
+}
+
+.join button.sponsorchild {
+    background-color: var(--gray);
+}
+
+/* Join End Here*/
+
+/* Footer Start Here*/
+
+footer {
+    background-color: #181818;
+    color: #7f7f7f;
+    padding: 50px 0;
+    font-size: 14px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+footer .title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+    padding: 0 0 5px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .linkscontainer ul {
+    list-style-type: none;
+}
+
+footer .linkscontainer ul li a {
+    text-decoration: none;
+    color: #7f7f7f;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .newslettercontainer img {
+    height: 40px;
+    margin-bottom: 11px;
+}
+
+footer .newslettercontainer input {
+    background-color: transparent;
+    border: 1px solid #7f7f7f;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    color: #ccc;
+    border-radius: 30px;
+}
+
+/* Footer End Here*/
